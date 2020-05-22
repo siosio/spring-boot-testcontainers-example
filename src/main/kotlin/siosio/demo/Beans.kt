@@ -17,10 +17,11 @@ val beans = beans {
 }
 
 private fun myRouter(
-    userHandler: UserHandler
+        userHandler: UserHandler
 ) = router {
     "/api".nest {
         POST("/users", userHandler::addUser)
         GET("/users", userHandler::findAll)
     }
 }
+

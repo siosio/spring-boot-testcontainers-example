@@ -35,9 +35,9 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
     runtimeOnly("mysql:mysql-connector-java")
 
-    implementation("org.seasar.doma.boot:doma-spring-boot-starter:1.3.0")
-    implementation("org.seasar.doma:doma:2.29.0")
-    kapt("org.seasar.doma:doma:2.29.0")
+    implementation("org.seasar.doma.boot:doma-spring-boot-starter:1.4.0")
+    implementation("org.seasar.doma:doma-core:2.35.0")
+    kapt("org.seasar.doma:doma-processor:2.35.0")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     // Javaの場合
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
