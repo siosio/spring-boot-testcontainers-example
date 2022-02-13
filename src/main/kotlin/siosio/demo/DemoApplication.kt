@@ -13,5 +13,5 @@ fun main(args: Array<String>) {
 }
 
 class BeansInitializer : ApplicationContextInitializer<GenericApplicationContext> {
-    override fun initialize(context: GenericApplicationContext) = beans.initialize(context)
+    override fun initialize(context: GenericApplicationContext) = beans(context).initialize(context)
 }
